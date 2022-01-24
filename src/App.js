@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Steps from "./components/Steps.js";
+import "./styles/global.css";
 
 const tempMin = -20;
 const tempMax = 40;
@@ -19,6 +20,8 @@ class App extends React.Component {
           <p>Temperature: {tempMin}</p>
           <Steps></Steps>
           <p>Steps: {stepsMin}</p>
+          <div className="box-pair">box-pair</div>
+          <div className="box-impair">box-impair</div>
         </div>
       </div>
     );
